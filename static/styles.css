@@ -1,0 +1,53 @@
+.navbar-nav {
+    list-style: none; /* Entfernt die Punkte */
+    display: flex; /* Setzt die Links nebeneinander */
+    gap: 15px; /* Fügt etwas Abstand zwischen den Links hinzu */
+    padding-left: 0; /* Entfernt Standard-Abstand von ul */
+}
+.format-jpeg {
+ width: 200px;          /* Alle Bilder werden 200px breit */
+    height: 200px;         /* Alle Bilder werden 200px hoch */
+    object-fit: cover;     /* Schneidet das Bild passend zu */
+    border-radius: 10px;   /* Optional: Abgerundete Ecken */
+    display: block;        /* Entfernt unnötige Abstände */
+    margin: 0 auto;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}Home - Meine Website{% endblock %}
+
+{% block content %}
+    <h1 style="color: green;">Willkommen auf dem Online Shop!</h1>
+    <!--<h2 style="color: green;">Ben ich habe {{ userage }} Jahre alt! </h2>-->
+    <p><a href="/about">Über uns</a> | <a href="/contact">Kontakt</a> | <a href="/shop"> Shop</a></p>
+    <img src="{{ url_for('static', filename='Computer.jpeg') }}"
+         style="width: 800px; height: 950px; object-fit: cover;">
+{% endblock %}
