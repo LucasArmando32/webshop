@@ -6,7 +6,7 @@
 <!--Ansprechspartner-->
         <p>Ihr Ansprechpartner:</p>
 <!--Hier die quelle des Bildes-->
-<img src="{{ url_for('static', filename='Stephan.jpg') }}"
+<img src="{{ url_for('static', filename='Stephan.jpg') }}" <!--Das file aus dem ordner static wird referenziert, danach formatiert und danach wird eine alternative gegeben-->
      style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"
      alt="Kontaktbild">
         <p>      Stephan Jeremias</p>
@@ -17,17 +17,17 @@
 <!--Kontakt Formular-->
 <p>Schreib uns eine Nachricht!</p>
 
-    <form action="{{ url_for('contact') }}" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <form action="{{ url_for('contact') }}" method="POST"> <!--action legt die url fest wohin die nachricht gesendet wird mit post wird festgelegt wie sie an den server gesendet werden-->
+        <label for="name">Name:</label> <!--#Name: sichtbare text und name verknüfpt id="name"-->
+        <input type="text" id="name" name="name" required> <!--Eingabefeld mit input definiert das eingabefeld text definiert texfeld required pflichtfeld-->
 
         <label for="email">E-Mail:</label>
         <input type="email" id="email" name="email" required>
 
         <label for="message">Nachricht:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea id="message" name="message" rows="4" required></textarea><!--mehrzeiliger input die ersten 4 zeilen sind sichtbar-->
 
-        <button type="submit">Senden</button>
+        <button type="submit">Senden</button> <!--erstellt einen klickbaren button vordem senden steht type="submit schickt ein formular automatisch ab"-->S
     </form>
 
     <p><a href="/">Zurück zur Startseite</a></p>

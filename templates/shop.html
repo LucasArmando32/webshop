@@ -7,15 +7,15 @@
     <h1>Unsere Ware</h1>
 
     <div class="row">
-        {% for product in products %}
+        {% for product in products %} <!--Eine schleife die durch alle Produkte geht-->
         <div class="col-md-4">
-            <div class="card">
+            <div class="card"> <!--erstellt eine bootstrap karte-->
 
-                <img src="{{ url_for('static', filename=product.bild) }}" class="format-jpeg" alt="{{ product.name }}">
+                <img src="{{ url_for('static', filename=product.bild) }}" class="format-jpeg" alt="{{ product.name }}"> <!--Zeigt das bild des productes und formatiert das bild wie im CSS file vorgegeben-->
                 <div class="card-body">
-                    <h5 class="card-title">{{ product.name }}</h5>
-                    <p class="card-text">{{ product.preis }} €</p>
-                    <a href="#" class="btn btn-primary">Jetzt kaufen</a>
+                    <h5 class="card-title">{{ product.name }}</h5><!--Zeigt den namen des products als karten titel-->
+                    <p class="card-text">{{ product.preis }} €</p><!--Zeigt den preis des products als karten Spreis-->
+                    <a href="/" class="btn btn-primary">Jetzt kaufen</a> <!--button als link btn btn-primary bootstrap klasse für blauen button -->
 
                 </div>
             </div>
